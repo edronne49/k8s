@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: nginx-deployment
 spec:
-  replicas: 3
+  replicas: 4
   selector:
     matchLabels:
       app: nginx
@@ -39,4 +39,5 @@ spec:
     - protocol: TCP
       port: 80
       targetPort: 80
+
   type: LoadBalancer
